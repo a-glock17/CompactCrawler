@@ -20,7 +20,7 @@ namespace CompactDungeonCrawler {
 
             // input == 1, this is the case for a new game
             if (playerMainMenuConvertedInput == 1) {
-                CreateNewSaveFile(true);
+                CreateNewSaveFile(true, "", 0);
             }
 
             // input == 2, this is the case for closing the game
@@ -38,12 +38,12 @@ namespace CompactDungeonCrawler {
 
         }
 
-        private static void CreateNewSaveFile(bool GameState) {
+        // ! playerMainMenuInput + playerMainMenuConvertedInput is passed to this function as well to not have to re-declare the same var
+        private static void CreateNewSaveFile(bool GameState, string playerMainMenuInput, int playerMainMenuConvertedInput) {
             if (GameState != true) {
                 Console.Error.Write("Error in boolean 'GameState'.\nBoolean was not set to true state.\n");
                 Environment.Exit(1);
             }
-
             // * super basic character creation saved to a text file before game is loaded
 
             string playerCharacterName;
@@ -52,10 +52,46 @@ namespace CompactDungeonCrawler {
             // these are customizable even after player chose identity
             string playerIdentifyingPronoun1; // ? pronoun1 is "she/he/they"
             string playerIdentifyingPronoun2; // ? pronoun2 is "her/him/them"
+            string playerIdentifyingPronoun3; // ? pronoun3 is "hers/his/theirs"
 
             Console.WriteLine("What is your characters name?\n>> ");
-
             playerCharacterName = Console.ReadLine();
+            Thread.Sleep(200);
+
+            Console.WriteLine("You have set your name to: " + playerCharacterName + ".\nIs this accurate? [y/n]\n>>");
+            playerMainMenuInput = Console.ReadLine();
+
+            // * capital Y case for yes
+            if (playerMainMenuInput == "Y") {
+                Thread.Sleep(100);
+                Console.WriteLine("Thank you for verifying.");
+                Thread.Sleep(150);
+            }
+
+            // * lower Y case for yes
+            else if (playerMainMenuInput == "y") {
+                Thread.Sleep(100);
+                Console.WriteLine("Thank you for verifying.");
+                Thread.Sleep(150);
+            }
+
+            // * upper N case for no
+            else if (playerMainMenuInput == "N") {
+                Thread.Sleep(500);
+                CreateNewSaveFile(true, "", 0);
+            }
+
+            // * lower N case for no
+            else if (playerMainMenuInput == "n") {
+                Thread.Sleep(500);
+                CreateNewSaveFile(true, "", 0);
+            }
+
+            // ! error catch
+            else {
+                Console.Error.Write("Given answer is not valid.");
+                Environment.Exit(1);
+            }
 
 
         }
