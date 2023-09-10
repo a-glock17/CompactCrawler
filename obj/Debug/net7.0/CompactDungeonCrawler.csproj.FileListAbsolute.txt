@@ -1,0 +1,14 @@
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\bin\Debug\net7.0\CompactDungeonCrawler.exe
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\bin\Debug\net7.0\CompactDungeonCrawler.deps.json
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\bin\Debug\net7.0\CompactDungeonCrawler.runtimeconfig.json
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\bin\Debug\net7.0\CompactDungeonCrawler.dll
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\bin\Debug\net7.0\CompactDungeonCrawler.pdb
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\obj\Debug\net7.0\CompactDungeonCrawler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\obj\Debug\net7.0\CompactDungeonCrawler.AssemblyInfoInputs.cache
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\obj\Debug\net7.0\CompactDungeonCrawler.AssemblyInfo.cs
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\obj\Debug\net7.0\CompactDungeonCrawler.csproj.CoreCompileInputs.cache
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\obj\Debug\net7.0\CompactDungeonCrawler.dll
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\obj\Debug\net7.0\refint\CompactDungeonCrawler.dll
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\obj\Debug\net7.0\CompactDungeonCrawler.pdb
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\obj\Debug\net7.0\CompactDungeonCrawler.genruntimeconfig.cache
+C:\Users\saphdev\Desktop\CompactDungeonCrawler\obj\Debug\net7.0\ref\CompactDungeonCrawler.dll
